@@ -1,0 +1,113 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+html, body, menu{
+  min-height:100%;
+}
+/* Logo design */
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+}
+
+/* Navigation menu design */
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+}
+
+nav > a {
+  width: 150px;
+  margin: 10px;
+ font-size:1.5em;
+ text-align:center;
+ color:white;
+}
+
+nav > a:hover{
+  background-color:#003399;
+}
+
+
+/* Pizza menu design */
+
+
+.menu > div > img{
+  border: 1px solid;
+  margin: 10px;
+}
+
+.menu{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height:100%;
+}
+
+.column{
+  width: 250px;
+  height: 250px;
+  margin: 100px;
+  margin-bottom:200px;
+
+}
+
+/* footer design */
+footer{
+  background-color: black;
+  padding:5px;
+  color:white;
+  font-size: 2em;
+  width:100%;
+  text-align: center;
+  position:fixed;
+  bottom:0px;
+  margin-top:200px;
+
+
+}
+
+/* Order Page layout */
+
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+
+.order{
+  flex:3;
+  margin: 5%;
+}
+.sidebar{
+  display:flex;
+  flex-flow: column;
+  flex:2;
+}
+.review{
+  border: 2px solid;
+  margin: 5%;
+  padding: 2%;
+  box-shadow: 10px 10px 20px;
+}
+
+
+@media screen and (max-width:578px){
+  .flex-container{
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
